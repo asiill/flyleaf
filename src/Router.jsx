@@ -12,40 +12,40 @@ import EditNote from "./pages/EditNote.jsx";
 const Router = () => {
     const router = createBrowserRouter([
         {
-            path: "/flyleaf/",
+            path: "/",
             element: <Home />,
         },
         {
-            path: "/flyleaf/trash",
+            path: "/trash",
             element: <Trash />,
         },
         {
-            path: "/flyleaf/newNote",
+            path: "/newNote",
             element: <NewNote />,
         },
         {
-            path: "/flyleaf/newNotebook",
+            path: "/newNotebook",
             element: <NewNotebook />,
         },
         {
-            path: "/flyleaf/:notebookId",
+            path: "/:notebookId",
             element: <Notebook />,
         },
         {
-            path: "/flyleaf/:notebookId/edit",
+            path: "/:notebookId/edit",
             element: <EditNotebook />,
         },
         {
-            path: "/flyleaf/:noteId",
+            path: "/:noteId",
             element: <Note />,
         },
         {
-            path: "/flyleaf/:noteId/edit",
+            path: "/:noteId/edit",
             element: <EditNote />,
         },
         {
             path: "*",
-            element: <Navigate to="/flyleaf/" />,
+            element: <Navigate to="/" />,
         },
     ]);
 
